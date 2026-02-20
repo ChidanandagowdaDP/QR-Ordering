@@ -17,7 +17,7 @@ const AdminDashboard = () => {
       table: tableNumber,
     };
     const encoded = btoa(JSON.stringify(payload));
-    setQrData(`http://localhost:5173/?data=${encoded}`);
+    setQrData(`https://qr-ordering-a0yy.onrender.com/?data=${encoded}`);
   };
 
   const handleDownload = () => {
