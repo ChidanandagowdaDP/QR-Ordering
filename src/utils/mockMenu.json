@@ -1,0 +1,160 @@
+[
+  {
+    "id": 1,
+    "name": "Chicken Biryani",
+    "price": 249,
+    "image": "https://picsum.photos/300?random=1",
+    "category": "food"
+  },
+  {
+    "id": 2,
+    "name": "Veg Fried Rice",
+    "price": 199,
+    "image": "https://picsum.photos/300?random=2",
+    "category": "food"
+  },
+  {
+    "id": 3,
+    "name": "Paneer Butter Masala",
+    "price": 229,
+    "image": "https://picsum.photos/300?random=3",
+    "category": "food"
+  },
+  {
+    "id": 4,
+    "name": "Mutton Curry",
+    "price": 349,
+    "image": "https://picsum.photos/300?random=4",
+    "category": "food"
+  },
+  {
+    "id": 5,
+    "name": "Cheese Burger",
+    "price": 159,
+    "image": "https://picsum.photos/300?random=5",
+    "category": "food"
+  },
+  {
+    "id": 6,
+    "name": "Margherita Pizza",
+    "price": 299,
+    "image": "https://picsum.photos/300?random=6",
+    "category": "food"
+  },
+  {
+    "id": 7,
+    "name": "French Fries",
+    "price": 129,
+    "image": "https://picsum.photos/300?random=7",
+    "category": "food"
+  },
+  {
+    "id": 8,
+    "name": "Pasta Alfredo",
+    "price": 219,
+    "image": "https://picsum.photos/300?random=8",
+    "category": "food"
+  },
+
+  {
+    "id": 9,
+    "name": "Kingfisher Strong Beer",
+    "price": 180,
+    "image": "https://picsum.photos/300?random=9",
+    "category": "beer"
+  },
+  {
+    "id": 10,
+    "name": "Budweiser Magnum Beer",
+    "price": 220,
+    "image": "https://picsum.photos/300?random=10",
+    "category": "beer"
+  },
+  {
+    "id": 11,
+    "name": "Heineken Beer",
+    "price": 240,
+    "image": "https://picsum.photos/300?random=11",
+    "category": "beer"
+  },
+  {
+    "id": 12,
+    "name": "Corona Extra Beer",
+    "price": 260,
+    "image": "https://picsum.photos/300?random=12",
+    "category": "beer"
+  },
+
+  {
+    "id": 13,
+    "name": "Blenders Pride Whisky",
+    "price": 350,
+    "image": "https://picsum.photos/300?random=13",
+    "category": "whisky"
+  },
+  {
+    "id": 14,
+    "name": "Royal Stag Whisky",
+    "price": 280,
+    "image": "https://picsum.photos/300?random=14",
+    "category": "whisky"
+  },
+  {
+    "id": 15,
+    "name": "Johnnie Walker Black Label",
+    "price": 550,
+    "image": "https://picsum.photos/300?random=15",
+    "category": "whisky"
+  },
+  {
+    "id": 16,
+    "name": "Jack Daniels Whisky",
+    "price": 650,
+    "image": "https://picsum.photos/300?random=16",
+    "category": "whisky"
+  },
+
+  {
+    "id": 17,
+    "name": "Sula Red Wine",
+    "price": 450,
+    "image": "https://picsum.photos/300?random=17",
+    "category": "wine"
+  },
+  {
+    "id": 18,
+    "name": "Fratelli White Wine",
+    "price": 420,
+    "image": "https://picsum.photos/300?random=18",
+    "category": "wine"
+  },
+
+  {
+    "id": 19,
+    "name": "Coca Cola",
+    "price": 40,
+    "image": "https://picsum.photos/300?random=19",
+    "category": "cooldrinks"
+  },
+  {
+    "id": 20,
+    "name": "Pepsi",
+    "price": 40,
+    "image": "https://picsum.photos/300?random=20",
+    "category": "cooldrinks"
+  },
+  {
+    "id": 21,
+    "name": "Sprite",
+    "price": 40,
+    "image": "https://picsum.photos/300?random=21",
+    "category": "cooldrinks"
+  },
+  {
+    "id": 22,
+    "name": "Red Bull",
+    "price": 120,
+    "image": "https://picsum.photos/300?random=22",
+    "category": "cooldrinks"
+  }
+]
