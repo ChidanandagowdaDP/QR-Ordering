@@ -11,7 +11,7 @@ const storeSlice = createSlice({
   reducers: {
     setStore: (state, action) => {
       state.storeId = action.payload;
-      sessionStorage.setItem("storeId", action.payload);
+      loStorage.setItem("storeId", action.payload);
     },
     clearStore: (state) => {
       state.storeId = "";

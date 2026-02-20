@@ -16,8 +16,10 @@ const Cart = () => {
 
   const cartItems = useSelector((state) => state.cart.items);
   const tableNumber = useSelector((state) => state.table.tableNumber);
+  const hasFoodItem = cartItems.some((item) => item.category === "food");
 
   const [showModal, setShowModal] = useState(false);
+  const [remark, setRemark] = useState("");
 
   const totalAmount = cartItems.reduce(
     (total, item) => total + item.price * item.qty,
@@ -32,6 +34,7 @@ const Cart = () => {
       table: tableNumber,
       items: cartItems,
       total: totalAmount,
+      remarks: remark,
       time: new Date().toLocaleString(),
     };
 
@@ -41,7 +44,7 @@ const Cart = () => {
 
     setTimeout(() => {
       dispatch(clearCart());
-    }, 300);
+    }, 100);
   };
 
   const handleCloseModal = () => {
@@ -135,6 +138,35 @@ const Cart = () => {
           <div className="mt-6 border-t pt-4">
             <p className="font-semibold text-lg">Total: ₹{totalAmount}</p>
             <hr className="mt-3" />
+
+            {hasFoodItem && (
+              <div className="mt-4">
+                <label className="block text-sm font-medium text-gray-600 mb-2">
+                  Remarks
+                </label>
+
+                <textarea
+                  placeholder="Add special instructions For Food (e.g., less spicy...)"
+                  rows={3}
+                  onChange={(e) => setRemark(e.target.value)}
+                  className="
+          w-full 
+          p-3 
+          rounded-xl 
+          border 
+          border-gray-300 
+          bg-gray-50 
+          text-sm 
+          focus:outline-none 
+          focus:ring-2 
+          focus:ring-red-400 
+          transition-all 
+          duration-200
+          resize-none
+        "
+                />
+              </div>
+            )}
             <button
               onClick={handlePlaceOrder}
               className="mt-4 w-full bg-red-500  text-white py-3 rounded-lg"

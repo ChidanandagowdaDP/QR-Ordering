@@ -36,7 +36,7 @@ const All = () => {
     }
   }, [location.search, dispatch]);
 
-  console.log(storeId, tableNumber);
+  // console.log(storeId, tableNumber);
 
   // 🔹 Filter items based on search
   const filteredItems = menuData.filter((item) =>

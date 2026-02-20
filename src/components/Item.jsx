@@ -1,7 +1,7 @@
 import { useDispatch } from "react-redux";
 import { addToCart } from "../redux/cartSlice";
 
-const Item = ({ id, name, price, image }) => {
+const Item = ({ id, name, price, image, category }) => {
   const dispatch = useDispatch();
 
   return (
@@ -24,7 +24,9 @@ const Item = ({ id, name, price, image }) => {
         <p className="text-red-500 font-bold text-sm">₹{price}</p>
 
         <button
-          onClick={() => dispatch(addToCart({ id, name, price, image }))}
+          onClick={() =>
+            dispatch(addToCart({ id, name, price, image, category }))
+          }
           className="bg-red-500 text-white px-3 py-1 rounded-lg text-xs"
         >
           Add
