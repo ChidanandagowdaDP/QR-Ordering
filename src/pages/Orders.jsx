@@ -27,8 +27,8 @@ const Orders = () => {
     <>
       {/* ✅ Thank You Modal */}
       {showModal && (
-        <div className="fixed inset-0  flex items-center justify-center z-50">
-          <div className="relative bg-white rounded-2xl p-8 w-96 min-h-[250px] border border-gray-200 text-center mx-4 shadow-xl flex flex-col justify-center">
+        <div className="fixed inset-0 bg-white  flex items-center justify-center z-50">
+          <div className="relative bg-white rounded-2xl p-8  border border-gray-200 text-center mx-4 shadow-xl flex flex-col justify-center">
             {/* Close Icon */}
             <button
               onClick={() => {
