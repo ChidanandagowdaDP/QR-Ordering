@@ -12,20 +12,16 @@ const All = () => {
 
   // 🔹 Redux state
   const searchQuery = useSelector((state) => state.search?.query || "");
-  const storeId = useSelector((state) => state.store?.storeId);
-  const tableNumber = useSelector((state) => state.table?.tableNumber);
 
   // 🔹 Parse storeId & tableNumber from QR code URL on page load
   useEffect(() => {
     const params = new URLSearchParams(location.search);
 
-    // 🔹 If using encoded QR
     const encoded = params.get("data");
 
     if (encoded) {
       try {
         const decoded = JSON.parse(atob(encoded));
-        console.log(decoded.store, decoded.table);
 
         if (decoded.store) dispatch(setStore(decoded.store));
         if (decoded.table) dispatch(setTable(Number(decoded.table)));
@@ -36,8 +32,6 @@ const All = () => {
       }
     }
   }, [location.search, dispatch]);
-
-  // console.log(storeId, tableNumber);
 
   // 🔹 Filter items based on search
   const filteredItems = menuData.filter((item) =>
