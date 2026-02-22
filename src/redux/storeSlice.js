@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 // Use sessionStorage instead of localStorage
-const savedStore = sessionStorage.getItem("storeId");
+const savedStore = localStorage.getItem("storeId");
 
 const storeSlice = createSlice({
   name: "store",
@@ -11,11 +11,11 @@ const storeSlice = createSlice({
   reducers: {
     setStore: (state, action) => {
       state.storeId = action.payload;
-      loStorage.setItem("storeId", action.payload);
+      localStorage.setItem("storeId", action.payload);
     },
     clearStore: (state) => {
       state.storeId = "";
-      sessionStorage.removeItem("storeId");
+      localStorage.removeItem("storeId");
     },
   },
 });

@@ -25,6 +25,7 @@ const All = () => {
     if (encoded) {
       try {
         const decoded = JSON.parse(atob(encoded));
+        console.log(decoded.store, decoded.table);
 
         if (decoded.store) dispatch(setStore(decoded.store));
         if (decoded.table) dispatch(setTable(Number(decoded.table)));

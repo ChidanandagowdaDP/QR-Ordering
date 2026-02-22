@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const savedTable = sessionStorage.getItem("table");
+const savedTable = localStorage.getItem("table");
 
 const tableSlice = createSlice({
   name: "table",
@@ -10,11 +10,11 @@ const tableSlice = createSlice({
   reducers: {
     setTable: (state, action) => {
       state.tableNumber = action.payload;
-      sessionStorage.setItem("table", action.payload);
+      localStorage.setItem("table", action.payload);
     },
     clearTable: (state) => {
       state.tableNumber = null;
-      sessionStorage.removeItem("table");
+      localStorage.removeItem("table");
     },
   },
 });
